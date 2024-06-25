@@ -1,0 +1,27 @@
+:root {
+    --grid-dimension: 9;
+}
+
+.grid-container {
+    display: inline-grid;
+    background-color: gainsboro;
+    padding: 10px;
+
+    grid-template-columns: repeat(var(--grid-dimension), 1fr);
+    grid-template-rows: repeat(var(--grid-dimension), 1fr);
+}
+
+.grid-item {
+    border: 1px solid blue;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.number-cell {
+    background-color: greenyellow;
+}
+
+.game-cell {
+    background-color: plum;
+}
