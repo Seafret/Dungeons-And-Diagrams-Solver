@@ -23,7 +23,7 @@ function populateGridCells() {
 function addGameCell(gridContainer) {
     let newCell = document.createElement('div');
     newCell.classList.add('grid-item', 'game-cell');
-    newCell.innerText = 's';
+    newCell.innerText = 'g';
 
     gridContainer.appendChild(newCell)
 }
@@ -31,9 +31,15 @@ function addGameCell(gridContainer) {
 function addNumberCell(gridContainer) {
     let newCell = document.createElement('div');
     newCell.classList.add('grid-item', 'number-cell');
-    newCell.innerText = 'n';
+    
+    let inputElement = document.createElement('input');
+    inputElement.setAttribute('type', 'number');
+    inputElement.setAttribute('min', 0);
+    inputElement.setAttribute('max', gridDimension);
+    inputElement.setAttribute('value', 0);
 
-    gridContainer.appendChild(newCell)
+    newCell.appendChild(inputElement);
+    gridContainer.appendChild(newCell);
 }
 
 function addFirstRow(gridContainer) {

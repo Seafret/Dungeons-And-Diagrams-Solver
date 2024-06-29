@@ -22,6 +22,11 @@
     background-color: greenyellow;
 }
 
+.number-cell > input {
+    background-color: greenyellow;
+    border: 0;
+}
+
 .game-cell {
     background-color: plum;
 }
