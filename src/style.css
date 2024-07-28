@@ -19,14 +19,18 @@
 }
 
 .number-cell {
-    background-color: greenyellow;
+    background-color: lightsteelblue;
 }
 
 .number-cell > input {
-    background-color: greenyellow;
+    background-color: lightsteelblue;
     border: 0;
 }
 
 .game-cell {
-    background-color: plum;
+    background-color: lightslategray;
+}
+
+.pretty-pony-cell {
+    background-color: black;
 }
